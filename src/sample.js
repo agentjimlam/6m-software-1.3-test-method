@@ -10,7 +10,18 @@ const isDivisibleBy5 = (num1) => {
     }
 }
 
+// step 2 write code that will make the test past
+const checkOddEven = (num2) => {
+    if (num2 % 2== 0){
+        return "even";
+    } else {
+        return "odd";
+    }
+}
+
 module.exports = {
     addFunc,
-    isDivisibleBy5
+    isDivisibleBy5,
+    checkOddEven
 }
+
