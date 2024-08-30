@@ -25,6 +25,14 @@ function convert(keyArr, valueArr){
         - Step 3: Within the for-loop, add the key and value to the local scoped object.
         - Step 4: Write a return statement to return the object literal after the for-loop code block.
     */
+   const objectLocal = {};          // DON'T FORGET THE = SYMBOL. 
+   /* I am only modifying the properties of the object (adding key-value pairs) and not reassigning the object itself, so const is fine*/
+   /* const and Mutability: When you declare an object with const, it means that the reference to the object cannot be reassigned. 
+   However, the object itself is still mutable. This means you can modify its properties, including adding or updating them.*/                                  
+   for (let i=0; i < keyArr.length; i++){
+        objectLocal[keyArr[i]] = valueArr[i];
+   }
+   return objectLocal;
 }
 
 function printByKey(key){
