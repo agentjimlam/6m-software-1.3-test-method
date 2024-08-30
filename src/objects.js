@@ -71,7 +71,7 @@ const school = {
     name : 'Codecademy',
     yearEstablished : 2015,
     isActive : true,
-    coursesOffered : ['Java', 'CSS', 'HTML'];
-}
+    coursesOffered : ['Java', 'CSS', 'HTML']
+};
 
 console.log(`Welcome to ${school.name} and we offer ${school.coursesOffered[0]}, ${school.coursesOffered[1]}, ${school.coursesOffered[2]}`); // print out using template literal ${}, and dot notation to access the 'school' object's property/key-value pair
